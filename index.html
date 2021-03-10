@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,23 +19,54 @@
         <main>
 
             <nav>
-                <div class="logo">
-                    <img src="img/logo.svg" alt="logo">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                    
+                    <ul class="main-nav">
+                        <li>
+                            <a href="#"> <div><img src="img/home.svg" alt="home"></div> <span>Home</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#"> <div><img src="img/search.svg" alt="search"></div> <span>Home</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#"> <div><img src="img/libreria.svg" alt=""></div> <span>Home</span></a>
+                        </li>
+                    </ul>
+                    
+                    <div class="playlist-container">
+                        <h4>PLAYLIST</h4>
+
+                        <a href="#"><i class="fas fa-plus"></i> <span>Crea Playlist</span></a>
+
+                        <ul class="playlist">
+
+                            <li> <a href="#"><span>Nome Playlist</span></a></li>
+
+                            <li> <a href="#"><span>Nome Playlist</span></a></li>
+
+                            <li> <a href="#"><span>Nome Playlist</span></a></li>
+
+                            <li> <a href="#"><span>Nome Playlist</span></a></li>
+
+                            <li> <a href="#"><span>Nome Playlist</span></a></li>
+
+                            <li> <a href="#"><span>Nome Playlist</span></a></li>
+
+                            <li> <a href="#"><span>Nome Playlist</span></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="download-app"><a href="#"><i class="far fa-arrow-alt-circle-down"></i><span>Installa App</span></a></div>
+                    
+                    <div class="current-user">
+                        <a href="#"><div class="user-picture"><img class="img-responsive" src="img/profile.svg" alt="profile"></div> <span>John Doe</span></a>
+                    </div>
                 </div>
-                
-                <ul class="main-nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                </ul>
             </nav>
 
             <div class="main-content"></div>
