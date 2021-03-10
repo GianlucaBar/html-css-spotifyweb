@@ -1,0 +1,61 @@
+ /* ============== 
+ COMMON  
+ ==================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+ /* ============== 
+ BASE LAYOUT 
+ ==================*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#app-wrapper{
+    width: 100%;
+    height: 100vh;
+}
+main{
+    height: calc( 100% - 100px);
+}
+
+footer{
+    height: 100px;
+
+    /* test  */
+    background-color: aquamarine;
+}
+
+nav{
+    float:left;
+    width: 220px;
+    height: 100%;
+
+    background-color: black;
+}
+
+.main-content{
+    float: left;
+    height: 100%;
+    width: calc( 100% - 220px );
+
+    background-color: burlywood;
+}
+ /* ============== 
+ SIDE-NAV
+ ==================*/
+.logo{
+    width: 150px;
+    padding: 20px 0 20px 15px;
+}
+  /* ============== 
+ PLAYER  
+ ==================*/
