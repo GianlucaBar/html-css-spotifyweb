@@ -65,10 +65,16 @@ nav{
  }
 
 .logo{
-    width: 150px;
     padding: 20px 0 20px 15px;
 }
 
+.logo img{
+    width: 150px;
+}
+.logo-small img{
+    width: 50px;
+    padding: 20px 0;
+}
 .main-nav{
     padding: 15px 20px
 }
@@ -154,6 +160,28 @@ nav i{
     vertical-align: middle;
     margin-right: 5px;
 }
+
+@media all and (max-width: 767px){
+    nav{
+        width: 80px;
+    }
+    .nav-wrapper{
+        align-items: center;
+    }
+
+    .nav-wrapper span{
+        display: none;
+    }
+
+    .playlist-container *{
+        display: none;
+    }
+
+    .download-app{
+        border-bottom: hidden;
+    }
+}
+
 /* ============== 
  PLAYER  
  ==================*/
