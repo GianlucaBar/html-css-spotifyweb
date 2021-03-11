@@ -52,8 +52,9 @@ nav{
     float: left;
     height: 100%;
     width: calc( 100% - 220px );
-
+    padding: 85px 0 20px 15px;
     background-color: #141922;
+    color: white;
 }
 /* ============== 
  SIDE-NAV
@@ -373,6 +374,31 @@ nav i{
 /* ============== 
  MAIN CONTENT 
  ==================*/
+.main-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.track-block{
+    flex-basis: calc( 100% / 6);
+    padding-right: 20px;
+}
+
+.track-title{
+    text-align: center;
+}
+
+@media all and (max-width: 1199px){
+    .track-block{
+        flex-basis: calc( 100% / 4);
+    }
+ }
+
+@media all and (max-width: 991px){
+    .track-block{
+        flex-basis: calc( 100% / 2);
+    }
+ }
 
 
 /* ============== 
