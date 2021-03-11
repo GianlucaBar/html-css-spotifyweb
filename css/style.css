@@ -33,9 +33,8 @@ main{
 
 footer{
     height: 100px;
-
-    /* test  */
-    background-color: aquamarine;
+    background-color: #282828;
+    color: white;
 }
 
 nav{
@@ -98,6 +97,9 @@ nav i{
     flex-grow: 2;
     min-height: 100px;
     padding: 15px 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .playlist{
@@ -118,6 +120,7 @@ nav i{
 .playlist-container h4{
     color: white;
     font-weight: 600;
+
 }
 
 .playlist li{
@@ -165,6 +168,11 @@ nav i{
     nav{
         width: 80px;
     }
+
+    .main-content{
+        width: calc( 100% - 80px )
+    }
+    
     .nav-wrapper{
         align-items: center;
     }
@@ -185,3 +193,57 @@ nav i{
 /* ============== 
  PLAYER  
  ==================*/
+
+ .player-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.player-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.player-left{
+    flex: 1;
+}
+
+.player-center{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.player-left > div{
+    margin-right: auto;
+}
+
+.player-right > div{
+    margin-left: auto;
+}
+
+.player-controls li{
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.player-controls li:nth-child(2){
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.player-controls li:nth-child(4){
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+#play{
+    font-size: 35px;
+}
+
+.player-controls a{
+    color: white;
+    font-size: 20px;
+}
