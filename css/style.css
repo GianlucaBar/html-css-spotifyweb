@@ -43,7 +43,6 @@ nav{
     float: left;
     width: 220px;
     height: 100%;
-
     overflow: hidden;
     background-color: black;
 }
@@ -55,6 +54,7 @@ nav{
     padding: 85px 0 20px 15px;
     background-color: #141922;
     color: white;
+    overflow: hidden;
 }
 /* ============== 
  SIDE-NAV
@@ -374,6 +374,32 @@ nav i{
 /* ============== 
  MAIN CONTENT 
  ==================*/
+/* nav main  */
+.top-nav{
+    width: 60%;
+    margin: auto;
+}
+
+.top-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.top-nav li{
+    padding: 20px 15px;
+}
+
+.top-nav a{
+    color: #7A7D81;
+}
+
+.current-page{
+    width: 40%;
+    height: 3px;
+    background-color: #ACFE2F;
+    margin: auto;
+}
+/* struttura blocchi responsive */
 .main-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -389,12 +415,18 @@ nav i{
 }
 
 @media all and (max-width: 1199px){
+
+    .main-nav{
+        width: 90%;
+    }
+
     .track-block{
         flex-basis: calc( 100% / 4);
     }
  }
 
 @media all and (max-width: 991px){
+
     .track-block{
         flex-basis: calc( 100% / 2);
     }
