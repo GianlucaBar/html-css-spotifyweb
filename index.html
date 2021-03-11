@@ -84,8 +84,9 @@
         <!-- FINE MAIN  -->
         <footer>
             <div class="player-wrapper">
+                <!-- player left  -->
                 <div class="player-left">
-                    <div class="inner-content">
+                    
                         <img class="player-thumbnail" src="img/sinister.jpeg" alt="sinister">
                         
                         <div class="playing-track">
@@ -95,11 +96,12 @@
                         </div>
 
                         <div class="track-options">
-                            <a href="#"></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-folder"></i></a>
                         </div>
-                    </div>
+        
                 </div>
-
+                <!-- player-center  -->
                 <div class="player-center">
 
                         <ul class="player-controls">
@@ -112,7 +114,7 @@
                             </li>
 
                             <li> 
-                                <a id="play" href="#"><i class="fas fa-play-circle"></i></a>
+                                <a id="play" href="#"><i class="far fa-play-circle"></i></a>
                             </li>
 
                             <li> 
@@ -127,17 +129,33 @@
                         <div class="progress-section">
                             <span>0:25</span>
 
-                            <div class="bar-total">
-                                <div class="bar-progress"></div>
+                            <div class="bar" id="track-total">
+                                <div class="bar-fill" id="track-progress"></div>
                             </div>
 
                             <span>0:25</span>
                         </div>
                     
                 </div>
-
+                <!-- player right  -->
                 <div class="player-right">
-                    <div>fjshfhdfjkdjhfksdfdssfssfsdffd</div>
+                    <div>
+                        <a href="#"><i class="fas fa-list-ul"></i></a>
+
+                        <a href="#"><i class="fas fa-desktop"></i></a>
+
+                    </div>
+
+                    <div class="volume-level">
+
+                        <a href="#"><i class="fas fa-volume-up"></i></a>
+
+                        <div class="bar" id="volume-bar">
+                            <div class="bar-fill" id="volume-current"></div>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
         </footer>

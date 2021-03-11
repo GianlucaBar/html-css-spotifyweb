@@ -194,6 +194,7 @@ nav i{
  PLAYER  
  ==================*/
 
+/* structure  */
  .player-wrapper{
     display: flex;
     height: 100%;
@@ -204,16 +205,18 @@ nav i{
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    min-width: 250px;
+    padding-right: 15px;
 }
 
 .player-left{
     flex: 1;
-    padding-left: 15px;
-}
-
-.inner-content{
     display: flex;
     align-items: center;
+    height: 100%;
+    padding-left: 15px;
 }
 
 .player-center{
@@ -222,14 +225,6 @@ nav i{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.player-left > div{
-    margin-right: auto;
-}
-
-.player-right > div{
-    margin-left: auto;
 }
 
 /* player central  */
@@ -262,14 +257,27 @@ nav i{
     min-width: 300px;
     text-align: center;
 }
-
-.bar-total{
-    width: 60%;
+.bar{
     height: 5px;
     border-radius: 5px;
     background-color: #5A5A5A;
     display: inline-block;
+}
+
+.bar-fill{
+    height: 5px;
+    border-radius: 5px;
+    background-color: #C1C1C1;
+}
+
+#track-total{
+    width: 60%;
     vertical-align: middle;
+}
+
+#track-progress{
+    width: 20%;
+    
 }
 
 .progress-section span{
@@ -278,18 +286,13 @@ nav i{
     padding: 0 10px
 }
 
-.bar-progress{
-    width: 20%;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #C1C1C1;
-}
 
 /* player left  */
 
 .player-thumbnail{
-    width: 60px;
-    height: 60px;
+    width: 20%;
+    max-width: 60px;
+    height: auto;
 }
 
 .playing-track{
@@ -305,5 +308,36 @@ nav i{
     font-size: 15px;
     color: #818181;
     margin: 0;
+}
+
+.track-options{
+    padding-left: 25px;
+    flex-shrink: 1;
+}
+.track-options a{
+    font-size: 20px;
+    color: #818181;
+    padding-right: 15px;
+}
+
+/* player-right  */
+
+.player-right a{
+    font-size: 17px;
+    color: white;
+    padding-right: 17px;
+}
+
+#volume-bar{
+    width: 120px;
+    display: inline-block;
+}
+
+.volume-level a{
+    vertical-align: middle;
+}
+
+#volume-current{
+    width: 80%;
 }
 
