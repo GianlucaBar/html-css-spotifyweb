@@ -208,12 +208,20 @@ nav i{
 
 .player-left{
     flex: 1;
+    padding-left: 15px;
+}
+
+.inner-content{
+    display: flex;
+    align-items: center;
 }
 
 .player-center{
-    flex: 1;
+    flex: 2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .player-left > div{
@@ -224,6 +232,7 @@ nav i{
     margin-left: auto;
 }
 
+/* player central  */
 .player-controls li{
    display: inline-block;
    vertical-align: middle;
@@ -247,3 +256,54 @@ nav i{
     color: white;
     font-size: 20px;
 }
+
+.progress-section{
+    width: 100%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.bar-total{
+    width: 60%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #5A5A5A;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.progress-section span{
+    vertical-align: middle;
+    font-size: 12px;
+    padding: 0 10px
+}
+
+.bar-progress{
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #C1C1C1;
+}
+
+/* player left  */
+
+.player-thumbnail{
+    width: 60px;
+    height: 60px;
+}
+
+.playing-track{
+    padding: 0 15px;
+}
+
+.playing-track h4{
+    font-size: 16px;
+    margin: 0;
+}
+
+.playing-track h5{
+    font-size: 15px;
+    color: #818181;
+    margin: 0;
+}
+
