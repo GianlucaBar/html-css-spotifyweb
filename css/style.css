@@ -22,7 +22,9 @@ ul{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    min-width: 610px;
 }
+
 #app-wrapper{
     width: 100%;
     height: 100vh;
@@ -51,7 +53,7 @@ nav{
     height: 100%;
     width: calc( 100% - 220px );
 
-    background-color: burlywood;
+    background-color: #141922;
 }
 /* ============== 
  SIDE-NAV
@@ -70,10 +72,12 @@ nav{
 .logo img{
     width: 150px;
 }
+
 .logo-small img{
     width: 50px;
     padding: 20px 0;
 }
+
 .main-nav{
     padding: 15px 20px
 }
@@ -95,7 +99,7 @@ nav i{
 
 .playlist-container{
     flex-grow: 2;
-    min-height: 100px;
+    min-height: 200px;
     padding: 15px 20px;
     overflow: hidden;
     display: flex;
@@ -207,8 +211,10 @@ nav i{
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    min-width: 250px;
+    min-width: 223px;
     padding-right: 15px;
+    flex-basis: 0;
+
 }
 
 .player-left{
@@ -217,6 +223,7 @@ nav i{
     align-items: center;
     height: 100%;
     padding-left: 15px;
+    flex-basis: 0;
 }
 
 .player-center{
@@ -225,7 +232,11 @@ nav i{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: 0;
+    min-width: 210px;
 }
+
+
 
 /* player central  */
 .player-controls li{
@@ -254,7 +265,6 @@ nav i{
 
 .progress-section{
     width: 100%;
-    min-width: 300px;
     text-align: center;
 }
 .bar{
@@ -271,7 +281,7 @@ nav i{
 }
 
 #track-total{
-    width: 60%;
+    width: 50%;
     vertical-align: middle;
 }
 
@@ -286,12 +296,19 @@ nav i{
     padding: 0 10px
 }
 
+.progress-section span:first-child{
+    padding-right: 10px;
+}
+
+.progress-section span:last-child{
+    padding-left: 10px;
+}
+
 
 /* player left  */
 
 .player-thumbnail{
-    width: 20%;
-    max-width: 60px;
+    width: 60px;
     height: auto;
 }
 
@@ -314,22 +331,34 @@ nav i{
     padding-left: 25px;
     flex-shrink: 1;
 }
+
 .track-options a{
     font-size: 20px;
     color: #818181;
     padding-right: 15px;
 }
 
+@media all and (max-width: 767px){
+    .track-options{
+        padding-left: 5px;
+        flex-shrink: 1;
+    }
+
+    .player-thumbnail{
+        width: 30px;
+    }
+ }
+
 /* player-right  */
 
 .player-right a{
-    font-size: 17px;
+    font-size: 15px;
     color: white;
     padding-right: 17px;
 }
 
 #volume-bar{
-    width: 120px;
+    width: 100px;
     display: inline-block;
 }
 
@@ -341,3 +370,43 @@ nav i{
     width: 80%;
 }
 
+/* ============== 
+ MAIN CONTENT 
+ ==================*/
+
+
+/* ============== 
+ FIXED 
+ ==================*/
+
+ .upgrade{
+     position: fixed;
+     top: 0px;
+     right: 0px;
+     background-color: rgba(0, 0, 0, 0.6);
+     height: 85px;
+     width: calc( 100% - 220px);
+ }
+ .inner-content{
+     display: flex;
+     height: 100%;
+     align-items: center;
+     justify-content: flex-end;
+     padding-right: 30px;
+ }
+.upgrade-btn{
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+ .upgrade a{
+     color: white;
+     padding: 10px 30px;
+     text-transform: uppercase;
+ }
+
+ @media all and (max-width: 767px){
+    .upgrade{
+        width: calc( 100% - 80px);
+    }
+ }
