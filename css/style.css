@@ -52,7 +52,7 @@ nav{
     height: 100%;
     width: calc( 100% - 220px );
     padding: 85px 0 20px 15px;
-    background-color: #141922;
+    background: linear-gradient(0deg, rgb(136, 37, 99) 0%, rgb(24, 40, 78) 89%);
     color: white;
     overflow: auto;
 }
@@ -394,14 +394,45 @@ nav i{
 
 .top-nav a{
     color: #7A7D81;
+    position: relative;
 }
 
+.top-nav a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+#active-link a{
+    color: white;
+}
+
+.top-nav a:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: -4px;
+    left: calc(50% - 20px);
+    background: #ACFE2F;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+.top-nav a:hover:after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
 .current-page{
-    width: 40%;
+    width: 40px;
     height: 3px;
     background-color: #ACFE2F;
     margin: auto;
 }
+/* fine nav main   */
 
 .main-wrapper{
     display: flex;
@@ -426,7 +457,7 @@ nav i{
     overflow: hidden;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    display: none;
     transition: .3s ease;
 }
 
@@ -443,14 +474,23 @@ nav i{
 }
 
 .cover-container:hover .overlay {
-    opacity: 1;
-}  
+    display: block;
+} 
+
  .cover-container a{
      color: white;
  }
 
 .track-title{
     text-align: center;
+}
+
+.track-title h6{
+    font-weight: 800;
+}
+
+.track-title h5{
+    color: #7A7C81;
 }
 
 .artists .track-block img{
