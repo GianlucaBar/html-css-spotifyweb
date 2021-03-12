@@ -16,6 +16,7 @@ ul{
     margin: 0;
     list-style-type: none;
 }
+
 /* ============== 
  BASE LAYOUT 
  ==================*/
@@ -29,6 +30,7 @@ body{
     width: 100%;
     height: 100vh;
 }
+
 main{
     height: calc( 100% - 100px);
 }
@@ -56,6 +58,7 @@ nav{
     color: white;
     overflow: auto;
 }
+
 /* ============== 
  SIDE-NAV
  ==================*/
@@ -79,11 +82,11 @@ nav{
     padding: 20px 0;
 }
 
-.main-nav{
+.side-nav{
     padding: 15px 0px
 }
 
-.main-nav li{
+.side-nav li{
     padding: 5px 0 5px 20px;
 }
 
@@ -117,23 +120,47 @@ nav i{
     overflow-y: auto;
 }
 
-.main-nav div{
+.side-nav div{
     display: inline-block;
     vertical-align: middle;
     width: 40px;
 }
 
-.main-nav span{
+.side-nav span{
     vertical-align: middle;
 }
 
 #active-page{
     border-left: 2px solid #ACFE2F;
 }
+
 .playlist-container h4{
     color: white;
     font-weight: 600;
 
+}
+
+.plus{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #A9A9A9;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 5px;
+}
+
+.fa-plus{
+    color: black;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.playlist-container > a:hover .plus{
+    background-color: white;
 }
 
 .playlist li{
@@ -202,6 +229,163 @@ nav i{
         border-bottom: hidden;
     }
 }
+
+/* ============== 
+ MAIN CONTENT 
+ ==================*/
+
+/* nav main  */
+.top-nav{
+    width: 60%;
+    margin: auto;
+}
+
+.top-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.top-nav li{
+    padding: 20px 15px;
+}
+
+.top-nav a{
+    color: #7A7D81;
+    position: relative;
+}
+
+.top-nav a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+#active-link a{
+    color: white;
+}
+
+.top-nav a:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: -4px;
+    left: calc(50% - 20px);
+    background: #ACFE2F;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+.top-nav a:hover:after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.current-page{
+    width: 40px;
+    height: 3px;
+    background-color: #ACFE2F;
+    margin: auto;
+}
+/* fine nav main   */
+
+/* inizio contenuti  */
+.main-content h2{
+    font-weight: 700;
+}
+
+.main-content p{
+    color: #7A7C81;
+}
+
+.section-main{
+    margin-top: 30px;
+}
+
+.blocks-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cover-container{
+    position: relative;
+}
+
+.track-block{
+    flex-basis: calc( 100% / 6);
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: .3s ease;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.overlay i{
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cover-container:hover .overlay {
+    display: block;
+} 
+
+.cover-container a{
+    color: white;
+}
+
+.track-title{
+    text-align: center;
+}
+
+.track-title h4{
+    font-weight: 600;
+}
+
+.track-title h5{
+    color: #7A7C81;
+    font-weight: 600;
+}
+
+.artists .track-block img{
+    border-radius: 50%;
+}
+
+@media all and (max-width: 1199px){
+
+    .main-nav{
+        width: 90%;
+    }
+
+    .track-block{
+        flex-basis: calc( 100% / 4);
+    }
+}
+
+@media all and (max-width: 991px){
+
+    .track-block{
+        flex-basis: calc( 100% / 2);
+    }
+}
+
 
 /* ============== 
  PLAYER  
@@ -416,173 +600,26 @@ nav i{
     display: block;
 }
 
-/* ============== 
- MAIN CONTENT 
- ==================*/
-/* nav main  */
-.top-nav{
-    width: 60%;
-    margin: auto;
-}
-
-.top-nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.top-nav li{
-    padding: 20px 15px;
-}
-
-.top-nav a{
-    color: #7A7D81;
-    position: relative;
-}
-
-.top-nav a:hover{
-    color: white;
-    text-decoration: none;
-}
-
-#active-link a{
-    color: white;
-}
-
-.top-nav a:after{
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    bottom: -4px;
-    left: calc(50% - 20px);
-    background: #ACFE2F;
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: .25s linear;
-}
-
-.top-nav a:hover:after{
-    visibility: visible;
-    transform: scaleX(1);
-}
-
-
-.current-page{
-    width: 40px;
-    height: 3px;
-    background-color: #ACFE2F;
-    margin: auto;
-}
-
-/* fine nav main   */
-.main-content h2{
-    font-weight: 700;
-}
-.main-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-}
-.cover-container{
-    position: relative;
-}
-
-.track-block{
-    flex-basis: calc( 100% / 6);
-    padding-right: 20px;
-    padding-top: 30px;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    display: none;
-    transition: .3s ease;
-}
-
-.circle{
-    border-radius: 50%;
-}
-
-.overlay i{
-    font-size: 60px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.cover-container:hover .overlay {
-    display: block;
-} 
-
- .cover-container a{
-     color: white;
- }
-
-.track-title{
-    text-align: center;
-}
-
-.track-title h4{
-    font-weight: 600;
-}
-
-.track-title h5{
-    color: #7A7C81;
-    font-weight: 600;
-}
-
-.artists .track-block img{
-    border-radius: 50%;
-}
-
-@media all and (max-width: 1199px){
-
-    .main-nav{
-        width: 90%;
-    }
-
-    .track-block{
-        flex-basis: calc( 100% / 4);
-    }
- }
-
-@media all and (max-width: 991px){
-
-    .track-block{
-        flex-basis: calc( 100% / 2);
-    }
- }
-
-
 
 /* ============== 
  FIXED 
  ==================*/
+.upgrade{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 85px;
+    width: calc( 100% - 220px);
+}
 
- .upgrade{
-     position: fixed;
-     top: 0px;
-     right: 0px;
-     background-color: rgba(0, 0, 0, 0.6);
-     height: 85px;
-     width: calc( 100% - 220px);
- }
-
- .inner-content{
-     display: flex;
-     height: 100%;
-     align-items: center;
-     justify-content: flex-end;
-     padding-right: 30px;
- }
+.inner-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
 
 .upgrade-btn{
     border-radius: 50px;
@@ -590,10 +627,10 @@ nav i{
 }
 
 .upgrade a{
-     color: white;
-     padding: 10px 30px;
-     text-transform: uppercase;
-     transition: .2s ease-in-out;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
 }
 
 .upgrade a:hover{

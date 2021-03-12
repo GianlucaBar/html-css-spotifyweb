@@ -22,6 +22,7 @@
             <!-- NAV  -->
             <nav>
                 <div class="nav-wrapper">
+                    <!-- menu principale  -->
                     <div class="logo hidden-xs">
                         <img src="img/logo.svg" alt="logo">
                     </div>
@@ -30,7 +31,7 @@
                         <img src="img/logo-small.svg" alt="logo small">
                     </div>
                     
-                    <ul class="main-nav">
+                    <ul class="side-nav">
                         <li id="active-page">
                             <a href="#"> <div><img src="img/home.svg" alt="home"></div> <span>Home</span></a>
                         </li>
@@ -43,11 +44,12 @@
                             <a href="#"> <div><img src="img/libreria.svg" alt=""></div> <span>Home</span></a>
                         </li>
                     </ul>
-
+                
+                    <!-- menu playlist      -->
                     <div class="playlist-container">
                         <h4>PLAYLIST</h4>
 
-                        <a href="#"><i class="fas fa-plus"></i> <span>Crea Playlist</span></a>
+                        <a href="#"><div class="plus"><i class="fas fa-plus"></i></div> <span>Crea Playlist</span></a>
 
                         <ul class="playlist">
 
@@ -67,7 +69,8 @@
 
                         </ul>
                     </div>
-                    
+                
+                    <!-- user   -->
                     <div class="download-app"><a href="#"><i class="far fa-arrow-alt-circle-down"></i><span>Installa App</span></a></div>
                     
                     <div class="current-user">
@@ -79,6 +82,7 @@
 
             <!-- INIZIO MAIN-CONTENT  -->
             <div class="main-content">
+                <!-- top nav  -->
                 <div class="top-nav">
                     <ul>
                         <li id="active-link">
@@ -108,192 +112,204 @@
                         </li>
                     </ul>
                 </div>
-                <h2>Recently played</h2>
 
-                <div class="main-wrapper">
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/metal_lifting.jpg" alt="heavy metal">
-                                
-                                <div class="overlay">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
+                <!-- prima sezione  -->
+                <div class="section-main">
+                    <h2>Recently played</h2>
+
+                    <div class="blocks-wrapper">
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/metal_lifting.jpg" alt="heavy metal">
+                                    
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="track-title">
+                                <h4>Heavy Metal</h4>
+                                <h5>Subtitle</h5>
+                            </div>
                         </div>
-                        <div class="track-title">
-                            <h4>Heavy Metal</h4>
-                            <h5>Subtitle</h5>
+    
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/stranger.jpeg" alt="stranger things">
+                                    
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="track-title">
+                                <h4>Stranger things, Vol.1 (a Netflix original series Soundtrack)</h4>
+                                <h5>Kyle Dixon & Michael Stein</h5>
+                            </div>
                         </div>
+    
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/aquietplace.jpeg" alt="a quiet place">
+                                    
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="track-title">
+                                <h4>A Quiet Place</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+                        </div>
+    
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/split.jpeg" alt="split">
+                                    
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="track-title">
+                                <h4>Split</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+                        </div>
+    
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/cure.jpeg" alt="cure for wellness">
+                                    
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="track-title">
+                                <h4>A cure for wellness</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+                        </div>
+    
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/sinister.jpeg" alt="sinister">
+                                    
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div class="track-title">
+                                <h4>Sinister</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+                        </div>  
+
                     </div>
-
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/stranger.jpeg" alt="stranger things">
-                                
-                                <div class="overlay">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="track-title">
-                            <h4>Stranger things, Vol.1 (a Netflix original series Soundtrack)</h4>
-                            <h5>Kyle Dixon & Michael Stein</h5>
-                        </div>
-                    </div>
-
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/aquietplace.jpeg" alt="a quiet place">
-                                
-                                <div class="overlay">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="track-title">
-                            <h4>A Quiet Place</h4>
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/split.jpeg" alt="split">
-                                
-                                <div class="overlay">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="track-title">
-                            <h4>Split</h4>
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/cure.jpeg" alt="cure for wellness">
-                                
-                                <div class="overlay">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="track-title">
-                            <h4>A cure for wellness</h4>
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/sinister.jpeg" alt="sinister">
-                                
-                                <div class="overlay">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="track-title">
-                            <h4>Sinister</h4>
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-
-
                 </div>
+                    
+                <!-- seconda sezione  -->
+                <div class="section-main">
+                    <h2>Creato per SpiralO</h2>
+                    <p>Piu'ascolti, piu' saranno accurati i suggerimenti.</p>
+                        
+                    <div class="blocks-wrapper">
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/radar.jpeg" alt="release radar">
+                                        
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+        
+                            <div class="track-title">
+                                <h4>Release Radar</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+                        </div>
+        
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/mixdaily.jpeg" alt="daily mix">
+                                        
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+                                
+                            <div class="track-title">
+                                <h4>Daily Mix 1</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
 
-                <h2>Creato per SpiralO</h2>
-                <p>Piu'ascolti, piu' saranno accurati i suggerimenti.</p>
+                <!-- terza sezione  -->
+                <div class="section-main">
+                    <h2>Creato per SpiralO</h2>
+                    <p>Piu'ascolti, piu' saranno accurati i suggerimenti.</p>
+
+                    <div class="blocks-wrapper artists">
+                        <div class="track-block">
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/youg.jpeg" alt="young">
+                                    
+                                    <div class="overlay circle">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="track-title">
+                                <h4>Lana del Rey</h4>
+                            </div>
+                        </div>
+
+                        <div class="track-block">                        
+                            <div class="cover-container">
+                                <a href="#">
+                                    <img src="img/einaudi.jpeg" alt="einaudi">
+                                    
+                                    <div class="overlay circle">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="track-title">
+                                <h4>Pinco Pallo</h4>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
                 
-                <div class="main-wrapper">
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/radar.jpeg" alt="release radar">
-                                
-                                <div class="overlay">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="track-title">
-                            <h4>Release Radar</h4>
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/mixdaily.jpeg" alt="daily mix">
-                                
-                                <div class="overlay">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="track-title">
-                            <h4>Daily Mix 1</h4>
-                            <h5>Subtitle</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>Creato per SpiralO</h2>
-                <p>Piu'ascolti, piu' saranno accurati i suggerimenti.</p>
-
-                <div class="main-wrapper artists">
-                    <div class="track-block">
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/youg.jpeg" alt="young">
-                                
-                                <div class="overlay circle">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="track-title">
-                            <h4>Lana del Rey</h4>
-                        </div>
-                    </div>
-
-                    <div class="track-block">                        
-                        <div class="cover-container">
-                            <a href="#">
-                                <img src="img/einaudi.jpeg" alt="einaudi">
-                                
-                                <div class="overlay circle">
-                                    <i class="far fa-play-circle"></i>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="track-title">
-                            <h4>Pinco Pallo</h4>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- FINE MAIN-CONTENT  -->
 
         </main>
         <!-- FINE MAIN  -->
+
+        <!-- FOOTER  -->
         <footer>
             <div class="player-wrapper">
                 <!-- player left  -->
@@ -378,14 +394,15 @@
                 </div>
             </div>
         </footer>
+        <!-- FINE FOOTER  -->
 
         <!-- fixed  -->
-
-        <div class="upgrade">
+         <div class="upgrade">
             <div class="inner-content">
                 <a class="upgrade-btn" href="#">Effettua l'Upgrade</a>
             </div>
         </div>
+        
     </div>
 </body>
 </html>
