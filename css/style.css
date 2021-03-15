@@ -17,6 +17,10 @@ ul{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* ============== 
  BASE LAYOUT 
  ==================*/
@@ -75,6 +79,10 @@ nav{
 
 .logo img{
     width: 150px;
+}
+
+.logo-small{
+    display: none;
 }
 
 .logo-small img{
@@ -137,7 +145,7 @@ nav i{
 .playlist-container h4{
     color: white;
     font-weight: 600;
-
+    padding-bottom: 10px;
 }
 
 .plus{
@@ -169,7 +177,7 @@ nav i{
 
 .download-app{
     margin: 0 20px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #707070;
     padding: 10px 0;
 }
 
@@ -209,12 +217,24 @@ nav i{
         width: 80px;
     }
 
+    .logo-small{
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+
     .main-content{
         width: calc( 100% - 80px )
     }
     
     .nav-wrapper{
         align-items: center;
+    }
+
+    .side-nav{
+        align-self: flex-start;
     }
 
     .nav-wrapper span{
